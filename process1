@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for i in {1..200}; do
+touch ~/Documents/$(head -c 200 /dev/urandom | tr -dc 'a-z' | fold -w 5 | head -n 1).txt
+   done
+for x in {a..z}
+do
+mkdir -p ~/Downloads/${x}
+cp ~/Documents/${x}* ~/Downloads/${x}
+#mv ~/Documents/${x}* ~/Downloads/${x}
+done
