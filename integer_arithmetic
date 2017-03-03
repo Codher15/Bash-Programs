@@ -1,0 +1,19 @@
+#!/bin/sh
+
+echo "Enter a: "
+read a
+echo "Enter b: "
+read b
+
+c=`expr $a + $b` # addition
+echo $c
+
+c=`expr $a \* $b` # multiplication
+echo $c
+
+c=`expr $a / $b` # division
+echo $c
+
+c=`expr $a % $b` # residual
+echo $c
+
